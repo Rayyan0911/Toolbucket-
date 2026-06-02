@@ -1,4 +1,3 @@
-# Toolbucket-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,57 +7,81 @@
 
 <style>
 body{
-    font-family: Arial, sans-serif;
     margin:0;
-    background:#f4f4f4;
+    font-family: Arial, sans-serif;
+    background:#f5f7fb;
 }
+
 header{
-    background:#222;
+    background: linear-gradient(135deg,#4a90e2,#6c5ce7);
     color:white;
+    padding:30px 20px;
     text-align:center;
-    padding:20px;
 }
+
+header h1{
+    margin:0;
+    font-size:40px;
+}
+
+header p{
+    margin-top:10px;
+    opacity:0.9;
+}
+
 .container{
-    width:90%;
     max-width:1000px;
     margin:auto;
     padding:20px;
 }
+
 .tools{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:15px;
-}
-.card{
-    background:white;
-    padding:20px;
-    border-radius:10px;
-    text-align:center;
-    box-shadow:0 2px 5px rgba(0,0,0,0.1);
-}
-.card a{
-    text-decoration:none;
-    color:#222;
-    font-weight:bold;
-}
-footer{
-    background:#222;
-    color:white;
-    text-align:center;
-    padding:10px;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
     margin-top:20px;
 }
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card a{
+    text-decoration:none;
+    color:#333;
+    font-weight:bold;
+    font-size:18px;
+}
+
+footer{
+    text-align:center;
+    padding:15px;
+    background:#222;
+    color:white;
+    margin-top:30px;
+}
 </style>
+
 </head>
 
 <body>
 
 <header>
     <h1>ToolBucket</h1>
-    <p>Free Online Calculators & Tools</p>
+    <p>All Free Online Tools in One Place</p>
 </header>
 
 <div class="container">
+
     <h2>Popular Tools</h2>
 
     <div class="tools">
@@ -68,26 +91,27 @@ footer{
         </div>
 
         <div class="card">
-            <a href="percentage-calculator.html">Percentage Calculator</a>
+            <a href="#">Percentage Calculator</a>
         </div>
 
         <div class="card">
-            <a href="bmi-calculator.html">BMI Calculator</a>
+            <a href="#">BMI Calculator</a>
         </div>
 
         <div class="card">
-            <a href="loan-calculator.html">Loan Calculator</a>
+            <a href="#">Loan Calculator</a>
         </div>
 
         <div class="card">
-            <a href="unit-converter.html">Unit Converter</a>
+            <a href="#">Unit Converter</a>
         </div>
 
     </div>
+
 </div>
 
 <footer>
-    © 2026 ToolBucket
+    © 2026 ToolBucket | Made with ❤️
 </footer>
 
 </body>
