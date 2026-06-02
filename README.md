@@ -9,65 +9,71 @@
 body{
     margin:0;
     font-family: Arial, sans-serif;
-    background:#f5f7fb;
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
 }
 
+/* HEADER */
 header{
-    background: linear-gradient(135deg,#4a90e2,#6c5ce7);
-    color:white;
-    padding:30px 20px;
     text-align:center;
+    padding:40px 20px;
 }
 
 header h1{
+    font-size:45px;
     margin:0;
-    font-size:40px;
+    background: linear-gradient(90deg,#ff9a9e,#fad0c4,#fbc2eb);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
 }
 
 header p{
-    margin-top:10px;
     opacity:0.9;
+    margin-top:10px;
 }
 
+/* CONTAINER */
 .container{
     max-width:1000px;
     margin:auto;
     padding:20px;
 }
 
+/* TOOL CARDS */
 .tools{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
     gap:20px;
-    margin-top:20px;
 }
 
 .card{
-    background:white;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
     padding:25px;
     border-radius:15px;
     text-align:center;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    border:1px solid rgba(255,255,255,0.2);
     transition:0.3s;
 }
 
 .card:hover{
-    transform:translateY(-5px);
+    transform: scale(1.05);
+    background: rgba(255,255,255,0.2);
 }
 
 .card a{
     text-decoration:none;
-    color:#333;
+    color:white;
     font-weight:bold;
     font-size:18px;
 }
 
+/* FOOTER */
 footer{
     text-align:center;
     padding:15px;
-    background:#222;
-    color:white;
     margin-top:30px;
+    background: rgba(0,0,0,0.4);
 }
 </style>
 
@@ -77,12 +83,10 @@ footer{
 
 <header>
     <h1>ToolBucket</h1>
-    <p>All Free Online Tools in One Place</p>
+    <p>One Place for All Free Online Tools</p>
 </header>
 
 <div class="container">
-
-    <h2>Popular Tools</h2>
 
     <div class="tools">
 
@@ -111,7 +115,7 @@ footer{
 </div>
 
 <footer>
-    © 2026 ToolBucket | Made with ❤️
+    © 2026 ToolBucket | Built for Free Tools Lovers
 </footer>
 
 </body>
